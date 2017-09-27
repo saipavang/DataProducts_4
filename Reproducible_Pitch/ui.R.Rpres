@@ -1,1 +1,54 @@
+Fake Contacts Generator presentation
+========================================================
+author: Sai Pavan G
+date: 27-09-2017
+
+Introduction
+========================================================
+
+This is presentation for Fake Contacts Generator, that is part of Course Project for Developing Data Products.
+
+**Agenda**
+- Idea
+- Data Details
+- Data Example
+- Summary
+
+Idea
+========================================================
+
+<div style="color: #25679E;">
+The main idea of the application is to provide usefule interface for fake contact data. It could be use for testing different application where requires relevant contact information like name, email, phone.
+</div>
+
+![Main screenshot](screenshot.png)
+
+Data Details
+========================================================
+
+**Data structure**
+- **Gender** - male or female
+- **GivenName**	- first name
+- **MiddleInitial** - first letter of middle name
+- **Surname**	- last name 
+- **EmailAddress** - email address
+- **TelephoneNumber**	- phone number
+- **Age** - person age
+
+Interface provides possbilbity to change Gender and Age range for output result.
+
+Data Example
+========================================================
+
+```{r, echo=FALSE}
+data <- read.csv("D://individuals-fake-data-p1.csv", nrows = 5000, header = TRUE)
+head(data[, c(2,5,6,7,15)])
+```
+
+Reference
+========================================================
+
+Fake Contacts Generator could be find by link: https://saipavang.shinyapps.io/ds_4_1/
+
+All source code Course Project locates on the GitHub repo: https://github.com/saipavang/DataProducts_4
 
